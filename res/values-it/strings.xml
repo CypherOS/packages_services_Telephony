@@ -588,4 +588,27 @@
     <string name="change_pin_confirm_pins_dont_match" msgid="4795052654904027909">"I PIN non corrispondono"</string>
     <string name="change_pin_succeeded" msgid="2022852286442211151">"PIN segreteria aggiornato"</string>
     <string name="change_pin_system_error" msgid="8308462387154257840">"Impossibile impostare il PIN"</string>
+    <string name="contactScreen">Gestione contatti SIM</string>
+    <string name="exportContactScreen">Esporta i contatti del dispositivo sulla SIM</string>
+    <string name="addSimEntries">Aggiungi un contatto alla SIM</string>
+    <string name="deleteAllSimEntries">Elimina tutti i contatti nella SIM</string>
+    <string name="deleteSimContacts">Eliminazione contatti nella SIM\u2026</string>
+    <string name="editContact">Modifica</string>
+    <string name="sendSms">Invia SMS</string>
+    <string name="delete">Elimina</string>
+    <string name="dial">Componi</string>
+    <string name="enterName">Inserire nome:</string>
+    <string name="enterNumber">Inserire numero di telefono:</string>
+    <string name="contactAddSuccess">Contatto aggiunto alla SIM</string>
+    <string name="contactAddFailed">Impossibile aggiungere il contatto alla SIM</string>
+    <string name="contactUpdateSuccess">Contatto modificato nella SIM</string>
+    <string name="contactUpdateFailed">Impossibile modificare il contatto nella SIM</string>
+    <string name="contactdeleteSuccess">Contatto eliminato dalla SIM</string>
+    <string name="contactdeleteFailed">Impossibile eliminare il contatto dalla SIM</string>
+    <string name="allContactdeleteSuccess">Tutti i contatti eliminati dalla SIM</string>
+    <string name="allContactdeleteFailed">Impossibile eliminare i contatti dalla SIM</string>
+    <string name="exportAllcontatsSuccess">Tutti i contatti esportati sulla SIM</string>
+    <string name="exportAllcontatsFailed">Impossibile esportare tutti i contatti sulla SIM</string>
+    <string name="cursorError">Il cursore non sta avendo i dati appropriati !!! </string>
+  
 </resources>
