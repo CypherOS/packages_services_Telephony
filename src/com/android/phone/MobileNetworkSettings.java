@@ -463,7 +463,7 @@ public class MobileNetworkSettings extends PreferenceActivity
         mButton4glte.setOnPreferenceChangeListener(this);
 
         mShow4GForLTE = Settings.System.getIntForUser(this.getContentResolver(),
-                                    Settings.System.SHOW_FOURG, 0, UserHandle.USER_CURRENT) == 1;
+                                    Settings.System.SHOW_LTE_FOURGEE, 0, UserHandle.USER_CURRENT) == 1;
 
         //get UI object references
         PreferenceScreen prefSet = getPreferenceScreen();
