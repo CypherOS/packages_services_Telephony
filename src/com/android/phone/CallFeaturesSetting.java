@@ -59,6 +59,8 @@ import com.android.phone.settings.VoicemailSettingsActivity;
 import com.android.phone.settings.fdn.FdnSetting;
 import com.android.services.telephony.sip.SipUtil;
 
+import com.android.internal.util.aoscp.PackageSniffer;
+
 import java.lang.String;
 import java.util.ArrayList;
 import java.util.List;
@@ -353,11 +355,11 @@ public class CallFeaturesSetting extends PreferenceActivity
             /* tm.listen(mPhoneStateListener, PhoneStateListener.LISTEN_CALL_STATE); */
         }
 
-        if (!PackageManagerUtils.isAppInstalled(this, "com.qualcomm.qti.ims")) {
+        if (!PackageSniffer.isAppInstalled(this, "com.qualcomm.qti.ims")) {
             prefSet.removePreference(findPreference("ims_settings_key"));
         }
 
-        if (!PackageManagerUtils.isAppInstalled(this, "com.qualcomm.qti.phonefeature")) {
+        if (!PackageSniffer.isAppInstalled(this, "com.qualcomm.qti.phonefeature")) {
             prefSet.removePreference(findPreference("button_callbarring_expand_key"));
         }
 
