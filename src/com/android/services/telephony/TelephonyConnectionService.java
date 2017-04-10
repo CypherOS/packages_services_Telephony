@@ -269,18 +269,12 @@ public class TelephonyConnectionService extends ConnectionService {
             mRequest = request;
         }
 
-        if ((isEmergencyNumber && !isRadioOn()) || isRadioPowerDownOnBluetooth() || isAirplaneModeOn) {
+        if ((isEmergencyNumber && !isRadioOn()) || isRadioPowerDownOnBluetooth()) {
             final Uri resultHandle = handle;
             // By default, Connection based on the default Phone, since we need to return to Telecom
             // now.
-			final int defaultPhoneType = PhoneFactory.getDefaultPhone().getPhoneType();
             final Connection resultConnection = getTelephonyConnection(request, numberToDial,
                     isEmergencyNumber, resultHandle, PhoneFactory.getDefaultPhone());
-			if (mEmergencyCallHelper == null) {
-                mEmergencyCallHelper = new EmergencyCallHelper(this);
-            }
-            mUseEmergencyCallHelper = true;
-            mEmergencyCallHelper.enableEmergencyCalling(new EmergencyCallStateListener.Callback() {
             RadioOnHelper radioOnHelper = new RadioOnHelper(this);
             radioOnHelper.enableRadioOnCalling(new RadioOnStateListener.Callback() {
                 @Override
