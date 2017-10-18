@@ -72,4 +72,10 @@
 
     </PreferenceCategory>
 
+    <SwitchPreference
+            android:key="button_proximity_key"
+            android:title="@string/proximity_mode_title"
+            android:summary="@string/proximity_on_summary"
+            android:persistent="false" />
+
 </PreferenceScreen>
