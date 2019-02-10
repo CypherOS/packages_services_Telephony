@@ -9,6 +9,7 @@ phone_common_dir := ../../apps/PhoneCommon
 src_dirs := src $(phone_common_dir)/src sip/src
 res_dirs := res $(phone_common_dir)/res sip/res
 asset_dirs := assets ecc/output
+ecc_proto := ecc/conversion_toolset_v1/proto
 
 LOCAL_JAVA_LIBRARIES := \
         telephony-common \
@@ -28,7 +29,7 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
         volley
 
 LOCAL_SRC_FILES := $(call all-java-files-under, $(src_dirs))
-LOCAL_SRC_FILES += $(call all-proto-files-under, ecc/proto)
+LOCAL_SRC_FILES += $(call all-proto-files-under, $(ecc_proto))
 LOCAL_SRC_FILES += \
         src/com/android/phone/EventLogTags.logtags \
         src/com/android/phone/INetworkQueryService.aidl \
